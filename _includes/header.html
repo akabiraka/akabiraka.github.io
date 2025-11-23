@@ -11,11 +11,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="{{ site.url }}{{ site.baseurl }}/favicon.ico" width="30" height="30" style="margin-right:5px" class="d-inline-block align-top" alt="">
         {{ site.title | escape }}
         </a>
-        <button class="toggler navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="toggler navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav01" aria-controls="navbarNav01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="collapse navbar-collapse" id="navbarNav01">
             <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
                 {% for page in site.nav_pages %}       
@@ -27,27 +27,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav> -->
 
 <!-- everything in middle -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-        <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">
-            <img src="{{ site.url }}{{ site.baseurl }}/favicon.ico" width="30" height="30" style="margin-right:5px" class="d-inline-block align-top" alt="">
-            {{ site.title | escape }}
-        </a>
+<nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #006747;font-size: 18px;font-weight: bold;">
+    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/" >
+        <img src="{{ site.url }}{{ site.baseurl }}/favicon.ico" width="30" height="30" style="margin-right:10px" class="d-inline-block align-mid" alt="">
+        {{ site.title | escape }}
+    </a>
 
-        <button class="toggler navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <button class="toggler navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav01" aria-controls="navbarNav01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
-                {% for page in site.nav_pages %}       
-                    <a class="nav-item nav-link" href="{{ site.url }}{{ site.baseurl }}/{{page.name}}">{{page.name | capitalize }}</a>
-                {% endfor %}
-            </div>
+    <div class="collapse navbar-collapse" id="navbarNav01">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
+            {% for page in site.nav_pages %}       
+                <a class="nav-item nav-link" href="{{ site.url }}{{ site.baseurl }}/{{page.name}}">{{page.name | capitalize }}</a>
+            {% endfor %}
         </div>
     </div>
+</div>
 </nav>
+
 
 
 <!-- example 6 - center on mobile -->
@@ -60,12 +60,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {{ site.title | escape }}
         </a>
         <div class="w-100 text-right">
-            <button class="toggler navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="toggler navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav01" aria-controls="navbarNav01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
     </div>
-    <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarColor02">
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav01">
         <div class="navbar-nav ml-auto flex-nowrap">
             <a class="nav-item nav-link" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
             {% for page in site.nav_pages %}       

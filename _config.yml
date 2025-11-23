@@ -1,7 +1,7 @@
 # Site settings
-title: Anowarul Kabir
+title: Kabir's AI for Bio Lab
 email: akabir4@gmu.edu
-description: Academic webpage of Anowarul Kabir
+description: Kabir's AI for Bio Lab
 baseurl: ""
 url: ""
 
@@ -12,31 +12,32 @@ url: ""
 
 # Footer info
 affiliation: >
-  Anowarul Kabir<br/>
-  Ph.D. Candidate in Computer Science<br/>
-  George Mason University
+  Anowarul Kabir, Ph.D.<br/>
+  Assistant Professor of Computer Science<br/>
+  University of South Florida
 
 location: >
-  George Mason University<br/>
-  Suite 4656, 4511 Patriot Circle<br/>
-  Fairfax, VA 22030
+  University of South Florida<br/>
+  4202 East Fowler Ave<br/>
+  Engineering Building II (ENB) #327<br/>
+  Tampa, Florida 33620
 
 contact: >
-  <a href="mailto:akabir4@gmu.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact "Anowarul" via email</a> <br/>
+  <a href="mailto:akabir@usf.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact "Anowarul" via email</a> <br/>
   <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
 
 # Pages shown in navbar
 nav_pages:
+  - name: teaching
   - name: research
   - name: collaboration
   - name: publications
+  - name: services
+  - name: about
   # - name: talks
   # - name: software
   # - name: team
-  - name: teaching
   # - name: blogs
-  - name: services
-  - name: about
 
 include:
   - .htaccess
