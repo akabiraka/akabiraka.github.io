@@ -8,11 +8,20 @@ Installing dependencies:
     sudo apt-get install ruby-full build-essential zlib1g-dev    # install jekyll
     sudo gem install jekyll bundler
 
+    ### for MAC: https://jekyllrb.com/docs/installation/macos/
+
+# install dependencies
+bundle install
+
+
 git could not deploy from the jekyll codes, so I had to run "rake publish", this creates "_site" folder. Then I renamed it "docs" and pushed it. 
 Next, in github settings pages/ select docs/.
 
-Run $ bundle exec jekyll serve in the repository root directory to run it on localhost.
-
+Run $ "bundle exec jekyll serve" in the repository root directory to run it on localhost.
+Caution: 
+    ctrl+z does not stop running on the localhost
+    Use the following instruction to find and kill the process that is using the port: 
+        You need to use kill -9 59780 with 59780 replaced with found PID number (use lsof -wni tcp:4000 to see which process used 3000 port and get the process PID).
 
 To change bootstrap themes from website/ directory:
     ./switch_theme.sh darkly
