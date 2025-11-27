@@ -1,5 +1,5 @@
 # Site settings
-title: Kabir's AI for Bio Lab
+title: Kabir's AI to Bio Lab (A2B) @USF
 email: akabir4@gmu.edu
 description: Kabir's AI for Bio Lab
 baseurl: ""
@@ -14,7 +14,7 @@ url: ""
 affiliation: >
   Anowarul Kabir, Ph.D.<br/>
   Assistant Professor of Computer Science<br/>
-  University of South Florida<br/>
+  University of South Florida, FL, USA<br/>
   <a href="mailto:akabir@usf.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Email: akabir@usf.edu</a>
 
 location: >
